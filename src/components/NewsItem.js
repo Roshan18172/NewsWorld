@@ -13,24 +13,16 @@ export class NewsItem extends Component {
                     <div className="card-body">
                         <h5 className="card-title">{title}......</h5>
                         <p className="card-text">{description}......</p>
-
                     </div>
                     <div className="card-footer text-center">
                         <a href={newsUrl} className="btn btn-primary">Read More</a>
-                        {/* <p className="card-text"><small className="text-muted">Last updated just now</small></p> */}
-                        {/* <p className="card-text"><small className="text-muted">By {author?author:"Unknown"} on {new Date(date).toGMTString()}</small></p> */}
                     </div>
                     <div className="card-footer text-center">
-                        {/* <a href={newsUrl} className="btn btn-primary">Read More</a> */}
-                        {/* <p className="card-text"><small className="text-muted">Last updated just now</small></p> */}
                         <p className="card-text"><small className="text-muted">By {author ? author : "Unknown"} on {new Date(date).toGMTString()}</small></p>
                     </div>
-
-
                 </div>
             </div>
         )
     }
 }
-
 export default NewsItem

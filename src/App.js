@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoadingBar from "react-top-loading-bar";
 
 export default class App extends Component {
-  apiKey = process.env.REACT_APP_NEWS_API_KEY ; // Fallback API key if not set in .env.local
+  apiKey = "3e92ae40d05d4698a62ac3aa789364a0" ; // Fallback API key if not set in .env.local
   state = {
     progress: 0
   }

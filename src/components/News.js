@@ -64,7 +64,7 @@ export class News extends Component {
     render() {
         return (
             <div className="container-fluid ">
-                <h2 className="my-3 text-center">News World - Top {this.props.category.charAt(0).toUpperCase() + this.props.category.slice(1)} Headlines</h2>
+                <h2 className=" text-center" style={{marginTop:"80px",marginBottom:"20px"}}>News World - Top {this.props.category.charAt(0).toUpperCase() + this.props.category.slice(1)} Headlines</h2>
                 {this.state.loading && <Spinner />}
                 <div className="container m-auto row bg-warning " style={{ marginBottom: "160px" }}>
                     {!this.state.loading && this.state.articles.map((element) => {
@@ -75,10 +75,8 @@ export class News extends Component {
                                 newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source} />
                         </div>
                     })}
-
                 </div>
                 <div className="container d-flex justify-content-between my-3" style={{ height: "80px" }}>
-
                 </div>
                 <div className="container d-flex justify-content-between my-3 fixed-bottom bg-success ">
                     <button disabled={this.state.page <= 1} type="button" className="btn btn-dark my-3" onClick={this.handlePrevClick}> &larr; Previous</button>
